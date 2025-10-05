@@ -34,6 +34,13 @@ Objective: Demonstrate that a context-aware semantic cache would be able to redu
    GEMINI_API_KEY=KEYHERE
 
 # Operation
-- 
+- Each session request prompted by the user will be tracked by session_id
+- Every new message makes the system build a context-aware embedding, which combines the current query with recent conversation turns
+- The current embedding will then be compared to previous embeddings within the FAISS index via cosine similarity
+- If the similarity is greater than or equal to the threshold, a cached response will then be returned. If not, the query would be sent to the Gemini LLM, and the result would then be cached.
 
-
+# Evaluation 
+We will be evaluating the cache various metrics such as:
+- Cache hit rate
+- Average latency improvement
+- LLM calls avoided
