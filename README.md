@@ -8,7 +8,7 @@ Embeddings: Google Gemini Embeddings API
 \
 Vector Store: FAISS
 \
-Objective: Demonstrate that a context-aware semantic cache would be able to reduce redundant LLM calls while simultaneously preserving the answer quality. We will also perform an in-depth analysis of more advanced semantic caching strategies for other AI agents for work other than just simple Q&A.
+Objective: Demonstrate that a context-aware semantic cache would be able to reduce redundant LLM calls while simultaneously preserving the answer quality. We will also perform an in-depth analysis of more advanced semantic caching strategies for other AI agents, beyond simple Q&A.
 
 # Setup Instructions
 1. Clone repo:
@@ -40,7 +40,7 @@ Objective: Demonstrate that a context-aware semantic cache would be able to redu
 - If the similarity is greater than or equal to the threshold, a cached response will then be returned. If not, the query would be sent to the Gemini LLM, and the result would then be cached.
 
 # Evaluation 
-We will be evaluating the cache various metrics such as:
+We will be evaluating the cache using various metrics such as:
 - Cache hit rate
 - Average latency improvement
 - LLM calls avoided
