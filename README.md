@@ -12,7 +12,28 @@ Objective: Demonstrate that a context-aware semantic cache would be able to redu
 
 # Setup Instructions
 1. Clone repo:
+   \
    git clone https://github.com/scred0405/semantic-cache-llm.git
+   \
    cd semantic-cache-llm
-2. 
+   
+2. Create virtual environment:
+   \
+   python -m venv .venv
+   \
+   source .venv\Scripts\activate
+   
+3. Install dependencies:
+   \
+   pip install -r requirements.txt
+   
+4. Add Gemini API key:
+   \
+   Open the .env file and add Gemini API key:
+   \
+   GEMINI_API_KEY=KEYHERE
+
+# Operation
+- 
+
 
