@@ -11,9 +11,12 @@ Vector Store: FAISS
 Objective: Demonstrate that a context-aware semantic cache would be able to reduce redundant LLM calls while simultaneously preserving the answer quality. We will also perform an in-depth analysis of more advanced semantic caching strategies for other AI agents, beyond simple Q&A.
 
 # Design Choices
-- **Embeddings:**We will be using a Gemini embedding model for the semantic cache. 'text-embedding-004' is the latest embedding model available
-- **
-
+- Embeddings: We will be using a Gemini embedding model for the semantic cache. 'text-embedding-004' is the latest embedding model available
+- Generation model: We will be using 'gemin-2.5-flash', as it provide fast responses for cache misses and the quality of answers is sufficient for keeping the cost low
+- Vector Store: We will be using FAISS as it is simple, fast, and doesn't require a server to run
+- Threshold: We chose a threshold of 0.82 in order to get a high reuse with approximately 0 bad reuses on the data
+- Context Window: We made k=2 in order to include a bit of recent chat in order to capture paraphrases without drift
+- Safety Gate: We are to only resuse if the same model produced the cache answer
 
 # Setup Instructions
 1. Clone repo:
