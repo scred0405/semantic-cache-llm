@@ -1,0 +1,5 @@
+google-generativeai
+faiss-cpu
+python-dotenv
+numpy
+pandas

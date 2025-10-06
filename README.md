@@ -44,3 +44,11 @@ We will be evaluating the cache using various metrics such as:
 - Cache hit rate
 - Average latency improvement
 - LLM calls avoided
+
+## Results
+
+| setup                   |  n | hit_rate | calls_avoided | p50_latency_ms | p95_latency_ms | false_reuse_rate |
+|-------------------------|---:|---------:|--------------:|---------------:|---------------:|-----------------:|
+| no_cache_log            | 14 |   0.000  |             0 |          17448 |          20553 |            0.000 |
+| semantic_cache_tau_0.82 | 14 |   0.857  |            12 |            203 |          13805 |            0.000 |
+
