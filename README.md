@@ -9,9 +9,6 @@ Embeddings: Google Gemini Embeddings API
 Vector Store: FAISS
 \
 Objective: Demonstrate that a context-aware semantic cache would be able to reduce redundant LLM calls while simultaneously preserving the answer quality. We will also perform an in-depth analysis of more advanced semantic caching strategies for other AI agents, beyond simple Q&A.
-hhhh
-
-iio'hiko'ioli'oi'poijp'pj'oi
 
 # Design Choices
 - Embeddings: We will be using a Gemini embedding model for the semantic cache. 'text-embedding-004' is the latest embedding model available
