@@ -1,3 +1,5 @@
+# test file to make sure our model has been integrated and can be called
+
 from dotenv import load_dotenv
 import os, google.generativeai as genai
 
