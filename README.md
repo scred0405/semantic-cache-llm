@@ -55,12 +55,11 @@ We will be evaluating the cache using various metrics such as:
 
 # Results
 
-| setup                   |  n | hit_rate | calls_avoided | p50_latency_ms | p95_latency_ms | false_reuse_rate | precision | recall | f1
-|-------------------------|---:|---------:|--------------:|---------------:|---------------:|-----------------:|----------:|-------:|
-| no_cache_log            | 20 |   0.00   |             0 |          13128 |          19670 |            0.000 |      0.00 |   0.00 | 0.000
-| semantic_cache_tau_0.78 | 20 |   0.45   |             9 |          12520 |          17837 |            0.000 |      1.00 |   1.00 | 1.000
-| semantic_cache_tau_0.82 | 20 |   0.20   |             4 |          12246 |          17707 |            0.000 |      0.75 |   0.25 | 0.222
-| semantic_cache_tau_0.86 | 20 |   0.00   |             0 |          13161 |          19564 |            0.000 |      0.00 |   0.00 | 0.000
+|         setup           |  n | hit_rate | calls_avoided | p50_latency_ms | p95_latency_ms | false_reuse_rate | precision | 
+| no_cache_log            | 20 |   0.00   |             0 |          13128 |          19670 |            0.000 |      0.00 |  
+| semantic_cache_tau_0.78 | 20 |   0.45   |             9 |          12520 |          17837 |            0.000 |      1.00 |  
+| semantic_cache_tau_0.82 | 20 |   0.20   |             4 |          12246 |          17707 |            0.000 |      0.75 |  
+| semantic_cache_tau_0.86 | 20 |   0.00   |             0 |          13161 |          19564 |            0.000 |      0.00 |  
 
 # Threshold
 We swept tau = 0.78, 0.82, 0.86. On this dataset, tau = 0.78 avoided 9/20 calls with 0 false reuse, while higher thresholds became too strict. 
