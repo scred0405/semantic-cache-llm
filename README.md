@@ -55,7 +55,7 @@ We will be evaluating the cache using various metrics such as:
 
 # Results
 
-|         setup           |  n | hit_rate | calls_avoided | p50_latency_ms | p95_latency_ms | false_reuse_rate | precision | 
+|         setup           |  n | hit_rate | calls_avoided | p50_latency_ms | p95_latency_ms | false_reuse_rate | precision |  \
 | no_cache_log            | 20 |   0.00   |             0 |          13128 |          19670 |            0.000 |      0.00 |  
 | semantic_cache_tau_0.78 | 20 |   0.45   |             9 |          12520 |          17837 |            0.000 |      1.00 |  
 | semantic_cache_tau_0.82 | 20 |   0.20   |             4 |          12246 |          17707 |            0.000 |      0.75 |  
