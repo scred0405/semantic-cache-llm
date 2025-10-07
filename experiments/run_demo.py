@@ -149,11 +149,10 @@ def run_demo(setup_name: str, use_cache: bool, tau: float, log_path: str):
 
 if __name__ == "__main__":
      # Baseline (no cache): always call the LLM
-    run_demo(setup_name="no_cache", use_cache=False, tau=0.0, log_path=os.path.join(RESULTS_DIR, "no_cache_log.jsonl"),
-    )
+    run_demo(setup_name="no_cache", use_cache=False, tau=0.0, log_path=os.path.join(RESULTS_DIR, "no_cache_log.jsonl"),)
      # Semantic cache run (tau=0.82): use embeddings + FAISS + threshold to reuse answers
-    run_demo(setup_name="semantic_cache_tau_0.82", use_cache=True, tau=0.82, log_path=os.path.join(RESULTS_DIR, "semantic_cache_tau_0.82.jsonl"),
-    )
+    for t in [0.78, 0.82, 0.86]:
+        run_demo(setup_name=f"semantic_cache_tau_{t}", use_cache=True, tau=t, log_path=os.path.join(RESULTS_DIR, f"semantic_cache_tau_{t}.jsonl"),)
 
 
 

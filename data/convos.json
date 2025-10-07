@@ -1,6 +1,6 @@
 [
     {
-        "session_id": "finance_1",
+        "sessionid": "finance_1",
     "turns": [
       { "role": "user", "text": "What factors influence stock prices in the U.S. market?" },
       { "role": "ai",   "text": "Stock prices are influenced by company earnings, investor sentiment, interest rates, and overall economic growth." },
@@ -9,7 +9,7 @@
     },
 
     {
-        "session_id": "finance_2",
+        "sessionid": "finance_2",
     "turns": [
       { "role": "user", "text": "How does inflation influence the stock market?" },
       { "role": "ai",   "text": "High inflation raises costs, reduces profits, and often leads to lower stock valuations." },
@@ -18,7 +18,7 @@
     },
 
     {
-        "session_id": "finance_3",
+        "sessionid": "finance_3",
     "turns": [
       { "role": "user", "text": "Why do markets become volatile during elections?" },
       { "role": "ai",   "text": "Elections create uncertainty about future policies, which makes investors more reactive and increases price swings." },
@@ -27,7 +27,7 @@
     },
 
     {
-        "session_id": "finance_4",
+        "sessionid": "finance_4",
     "turns": [
       { "role": "user", "text": "What triggers a bull market?" },
       { "role": "ai",   "text": "A bull market starts when optimism and strong economic growth push prices higher over time." },
@@ -36,7 +36,7 @@
     },
 
     {
-        "session_id": "finance_5",
+        "sessionid": "finance_5",
     "turns": [
       { "role": "user", "text": "What are safe investments during economic uncertainty?" },
       { "role": "ai",   "text": "Investors often prefer assets like government bonds, gold, and diversified index funds during uncertain times." },
@@ -45,7 +45,7 @@
     },
 
     {
-        "session_id": "finance_6",
+        "sessionid": "finance_6",
     "turns": [
       { "role": "user", "text": "Why do interest rate hikes make investors cautious?" },
       { "role": "ai",   "text": "Higher rates increase borrowing costs and can cool growth, which weighs on stocks." },
@@ -54,14 +54,38 @@
     },
 
     {
-        "session_id": "finance_7",
+        "sessionid": "finance_7",
     "turns": [
-      { "role": "user", "text": "What makes tech stocks drop sharply after earnings reports?" },
-      { "role": "ai",   "text": "If earnings miss expectations or guidance disappoints, shares can fall even when revenue grows." },
-      { "role": "user", "text": "Why do technology company shares decline despite high revenue?" }
+      {"role": "user", "text": "Is NVIDIA overvalued relative to peers using forward P/E?"},
+      {"role": "ai",   "text": "Compare its forward P/E to peers; growth can justify some premium."},
+      {"role": "user", "text": "Is NVIDIA fairly valued based on a discounted cash flow model?"}
+    ]
+    },
+
+    {
+      "sessionid": "finance_8",
+    "turns": [
+      {"role": "user", "text": "What does an inverted yield curve signal about a recession timeline?"},
+      {"role": "ai",   "text": "Historically an inversion tends to precede recessions by ~6–18 months."},
+      {"role": "user", "text": "What does a 2s10s inversion usually imply about when recessions arrive?"}
+    ]
+    },
+
+    {
+      "sessionid": "finance_9",
+    "turns": [
+      {"role": "user", "text": "How does a CPI surprise typically move the S&P 500 on release day?"},
+      {"role": "ai",   "text": "Hotter-than-expected CPI often pressures equities; cooler prints can lift them."},
+      {"role": "user", "text": "What happens to the S&P 500 when inflation prints above expectations?"}
+    ]
+    },
+
+    {
+      "sessionid": "finance_10",
+    "turns": [
+      {"role": "user", "text": "What is the impact of Fed rate cuts on regional banks’ net interest margins?"},
+      {"role": "ai",   "text": "Cuts usually compress NIM unless funding costs fall faster than asset yields."},
+      {"role": "user", "text": "How do rate cuts affect regional banks’ loan growth?"}
     ]
     }
-
-
-
 ]

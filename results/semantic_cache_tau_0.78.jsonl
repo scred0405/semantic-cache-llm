@@ -1,0 +1,2 @@
+{"setup": "semantic_cache_tau_0.78", "sessionid": "finance_1", "trnindx": 0, "threshold": 0.78, "cache_hit": false, "similarity": null, "latency_ms": 18438, "llm_called": true, "semduplicatelabel": null, "embedding_model": "text-embedding-004", "generation_model": "gemini-2.5-flash"}
+{"setup": "semantic_cache_tau_0.78", "sessionid": "finance_1", "trnindx": 2, "threshold": 0.78, "cache_hit": true, "similarity": 0.7836030721664429, "latency_ms": 300, "llm_called": false, "semduplicatelabel": true, "embedding_model": "text-embedding-004", "generation_model": "gemini-2.5-flash"}

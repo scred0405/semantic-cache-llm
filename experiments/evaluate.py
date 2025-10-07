@@ -31,7 +31,7 @@ def summarize(records):
     TP = FP = TN = FN = 0
     labeled = 0
     for r in recs:
-        label = _to_bool(r.get("label_semantic_duplicate"))
+        label = _to_bool(r.get("semduplicatelabel"))
         if label is None:
             continue
         labeled += 1

@@ -2,7 +2,7 @@ from typing import Dict
 
 class CachePolicy:
     # Simple policy which performs threshold and metadata compatability checks
-    def __init__(self, threshold: float = 0.82):
+    def __init__(self, threshold: float = 0.78):
         self.threshold = threshold # establish similarity threshold
     
     def passthreshold(self, similarity: float) -> bool:
